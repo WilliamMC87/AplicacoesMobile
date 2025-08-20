@@ -10,8 +10,12 @@ class TelaHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Aula 03 App Sharedpreferences',
       home: TelaApp(),
+      
+      theme: ThemeData(useMaterial3: true,colorSchemeSeed: Colors.blue),
+      
     );
     
   } 
@@ -104,7 +108,9 @@ Future<void> _limparTudo()async{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
+        backgroundColor: Colors.blue,
+        title: Text('App aula 03 - SharedPreferences'),
+        centerTitle: true,
       ),
       body: 
        Padding(
